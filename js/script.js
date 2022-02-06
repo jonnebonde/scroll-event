@@ -5,15 +5,21 @@ function handleScroll() {
 
     const scrolledY = window.scrollY;
 
-    if (scrolledY > 50) {
+    if(scrolledY > 50) {
         document.body.classList.add("scrolled");
         nav.classList.add("scrolled");
-    } else {
+    } 
+    
+    else {
         document.body.classList.remove("scrolled");
         nav.classList.remove("scrolled");
     }
+
 }
 
-// window.onscroll = handleScroll;
+//Can use different ways to get the event triggered
+
+window.onscroll = handleScroll;
+
 
 window.addEventListener("scroll", handleScroll);
